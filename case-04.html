@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Position Example</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .card {
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            border: 1px solid #ddd;
+            position: relative;
+        }
+
+        .header {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="header">
+        <p>Card 1</p>
+    </div>
+    <div class="content">
+        <p>Hello</p>
+    </div>
+</div>
+</body>
+</html>
